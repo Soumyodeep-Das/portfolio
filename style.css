@@ -33,7 +33,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     padding: 20px 100px;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +76,7 @@ header {
 }
 .close-menu {
     top: 33px;
-    right: 40px;
+    right: 10rem;
 }
 #check {display: none;}
 
@@ -154,7 +154,7 @@ section + section {
 }
 
 .home-content {
-    max-width: 60rem;
+    max-width: 10%;
 }
 
 .home-content h1 {
@@ -219,11 +219,11 @@ footer {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     header {
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 100vw;
         padding: 20px 20px;
         justify-content: space-between;
         align-items: center;
@@ -235,12 +235,10 @@ footer {
         font-size: 1em;
     } 
     .navigation .btnLogin-popup {
-        width: 100px;
-        height: 40px;
-        font-size: 1em;
+        display: none;
     }
     .home-content h1 {
-        font-size: 3.6rem;
+        font-size: 3rem;
     }
     .home-content .text-animation h3 {
         font-size: 2.0rem;
@@ -258,7 +256,7 @@ footer {
         transition: all 0.2s ease-in-out;
     }
     .menu li {margin-top: 10px;}
-    .menu li a {padding: 10px;}
+    .menu li a {padding: 10px; padding-right: 90px;}
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
 }
